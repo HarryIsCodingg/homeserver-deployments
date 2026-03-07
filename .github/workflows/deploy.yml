@@ -1,0 +1,28 @@
+name: Deploy Containers
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update deployment directory
+        run: |
+          rsync -av --delete ./ /home/harry/homeserver-deployments/
+
+      - name: Pull new images
+        run: |
+          cd /home/harry/homeserver-deployments
+          docker compose pull
+
+      - name: Restart containers
+        run: |
+          cd /home/harry/homeserver-deployments
+          docker compose up -d --remove-orphans

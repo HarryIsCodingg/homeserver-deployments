@@ -15,7 +15,10 @@ jobs:
 
       - name: Update deployment directory
         run: |
-          rsync -av --delete ./ /home/harry/homeserver-deployments/
+          rsync -av --delete \
+            --exclude '.env' \
+            --exclude '.git' \
+            ./ /home/harry/homeserver-deployments/
 
       - name: Pull new images
         run: |

@@ -13,7 +13,7 @@ services:
       - app-net
 
   portfolio:
-    image: ghcr.io/harryiscodingg/portfolio-one-page:latest
+    image: ghcr.io/harryiscodingg/portfolio-one-page:a7f946f
     container_name: portfolio
     restart: unless-stopped
     networks:

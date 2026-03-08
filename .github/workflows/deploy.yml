@@ -20,7 +20,7 @@ jobs:
             --exclude '.git' \
             ./ /home/harry/homeserver-deployments/
             
-       - name: Log in to GHCR
+      - name: Log in to GHCR
         run: |
           echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u HarryIsCodingg --password-stdin
           

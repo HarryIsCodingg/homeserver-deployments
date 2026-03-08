@@ -19,7 +19,11 @@ jobs:
             --exclude '.env' \
             --exclude '.git' \
             ./ /home/harry/homeserver-deployments/
-
+            
+       - name: Log in to GHCR
+        run: |
+          echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u HarryIsCodingg --password-stdin
+          
       - name: Pull new images
         run: |
           cd /home/harry/homeserver-deployments

@@ -18,6 +18,7 @@ jobs:
           rsync -av --delete \
             --exclude '.env' \
             --exclude '.git' \
+            --exclude 'env/' \
             ./ /home/harry/homeserver-deployments/
             
       - name: Log in to GHCR

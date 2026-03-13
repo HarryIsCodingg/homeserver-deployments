@@ -15,7 +15,7 @@ services:
       - app-net
 
   portfolio:
-    image: ghcr.io/harryiscodingg/portfolio-one-page:f2f47c0
+    image: ghcr.io/harryiscodingg/portfolio-one-page:4867cda
     container_name: portfolio
     restart: unless-stopped
     networks:

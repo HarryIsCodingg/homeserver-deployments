@@ -10,7 +10,9 @@ Public traffic first reaches Cloudflare, where DNS, SSL, and edge routing are ha
 
 Inside the home server, requests are forwarded to an Nginx reverse proxy container. Nginx routes each request to the correct application container based on the domain or route configuration.
 
-<img width="1860" height="770" alt="home_server_architecture_clean_v2 drawio" src="https://github.com/user-attachments/assets/64824477-30af-4e66-9f2a-baac54d615e5" />
+<img width="1860" height="770" alt="home_server_architecture_clean_v2 drawio (1)" src="https://github.com/user-attachments/assets/3ccd8426-d430-40fa-a653-eded9db99260" />
+
+
 
 ## Request Flow
 

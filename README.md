@@ -100,7 +100,7 @@ The setup focuses on:
 4. The deployment configuration is updated.
 5. The self-hosted runner on the home server is triggered.
 6. Docker Compose pulls the latest image.
-7. Containers are recreated or updated.
+7. Containers are recreated or updated whenever new tag is pushed.
 8. Traffic is routed through Cloudflare Tunnel and Nginx.
 
 ## Technologies Used

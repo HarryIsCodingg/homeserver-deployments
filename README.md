@@ -1,6 +1,6 @@
 # Home Server Deployments
 
-This repository contains the deployment configuration for my self-hosted applications running on a Linux home server. It manages Docker Compose services, Nginx reverse proxy configuration, Cloudflare Tunnel routing, and the CI/CD workflow used to deploy multiple applications behind HTTPS
+This repository contains the deployment configuration for my self-hosted applications running on a Linux home server. It manages Docker Compose services, Nginx reverse proxy configuration, Cloudflare Tunnel routing, and the CI/CD workflow used to deploy multiple applications behind HTTPS.
 
 The goal of this setup is to keep application deployment automated, repeatable, and secure while avoiding direct exposure of the home server to the public internet.
 
